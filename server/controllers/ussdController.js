@@ -157,6 +157,7 @@ menu.state("cancel", {
 
 class hpayController {
   static async hpayLogin(req, res) {
+    console.log("helo");
     menu.run(req.body, async (ussdResult) => {
       res.end(ussdResult);
     });

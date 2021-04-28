@@ -3,6 +3,6 @@ import ussdController from "../controllers/ussdController";
 
 const ussdRouter = express.Router();
 
-ussdRouter.post("/", ussdController.hpayLogin);
+ussdRouter.get("/", ussdController.hpayLogin);
 
 export default ussdRouter;
